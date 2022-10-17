@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url("images/patt.png");
+}
+
+.header {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 25px 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.col-md-3 {
+  width: 25%;
+}
+.col-md-6 {
+  width: 50%;
+}
+[class*="col-"] {
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.logo {
+  margin-top: 7px;
+}
+
+.menu, .submenu {
+  list-style: none;
+}
+
+.menu li {
+  float: left;
+  width: 25%;
+  border-left: 1px solid #2c71b8;
+  border-right: 1px solid #2c71b8;
+}
+
+.menu a {
+  display: block;
+  height: 50px;
+  text-decoration: none;
+  color: #2c71b8;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 300;
+  font-size: 21px;
+}
+
+.menu:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.submenu {
+  display: none;
+  padding-left: 0;
+}
+
+.menu li:hover .submenu {
+  display: block;
+ 
+ }
+
+.bloc {
+background: #c8d6e4;
+}
+
+.bloc a {
+  float: left;
+  width: 50px;
+  background-color: #ffff;
+  border-radius: 60;
+  text-align: center;
+}
+
+.bloc:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.content {
+  width: 10%;
+  text-align: center;
+  right: 10;
+}
