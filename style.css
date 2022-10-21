@@ -38,7 +38,7 @@ body {
 }
 
 .col-md-9 {
-  width: 80%;
+  width: 75%;
 }
 
 [class*="col-"] {
@@ -77,6 +77,10 @@ body {
   color: white;
 }
 
+form {
+  position: relative;
+}
+
 .form-search {
   border: 1px solid #2c71b8;
   margin-top: 12px;
@@ -98,7 +102,33 @@ body {
 }
 
 .form-search button {
-  content: url(images/search.png);
-  padding: 10px;
+  position: absolute;
+  right: 10px;
+  top: 3px;
+  border: none;
+  background-image: url("images/search.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20px;
+  width: 20px;
   background-color: #2c71b8;
+}
+
+.cart {
+  position: relative;
+  background-image: url("images/pay.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  border: none;
+  border-radius: 10%;
+  padding: 20px;
+}
+
+.product-count {
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  color: brown;
+  font-size: 1.2em;
 }
